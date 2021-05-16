@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Kastimagina.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Kastimagina Down0000" x="0" y="0" width="470" height="421"/>
+	<SubTexture name="Kastimagina Down0001" x="0" y="0" width="470" height="421"/>
+	<SubTexture name="Kastimagina Down0002" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0003" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0004" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0005" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0006" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0007" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0008" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0009" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0010" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0011" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0012" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0013" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Down0014" x="470" y="0" width="459" height="421" frameX="-10" frameY="0" frameWidth="470" frameHeight="421"/>
+	<SubTexture name="Kastimagina Idle0000" x="929" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0001" x="929" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0002" x="1372" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0003" x="1372" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0004" x="1815" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0005" x="1815" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0006" x="2258" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0007" x="2258" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0008" x="2258" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0009" x="2258" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0010" x="2258" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0011" x="2258" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0012" x="2258" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Idle0013" x="2258" y="0" width="443" height="449"/>
+	<SubTexture name="Kastimagina Left0000" x="2701" y="0" width="475" height="462" frameX="-5" frameY="0" frameWidth="480" frameHeight="462"/>
+	<SubTexture name="Kastimagina Left0001" x="2701" y="0" width="475" height="462" frameX="-5" frameY="0" frameWidth="480" frameHeight="462"/>
+	<SubTexture name="Kastimagina Left0002" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0003" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0004" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0005" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0006" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0007" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0008" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0009" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0010" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0011" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0012" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0013" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Left0014" x="3176" y="0" width="480" height="462"/>
+	<SubTexture name="Kastimagina Right0000" x="3656" y="0" width="419" height="437" frameX="0" frameY="0" frameWidth="421" frameHeight="437"/>
+	<SubTexture name="Kastimagina Right0001" x="3656" y="0" width="419" height="437" frameX="0" frameY="0" frameWidth="421" frameHeight="437"/>
+	<SubTexture name="Kastimagina Right0002" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0003" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0004" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0005" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0006" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0007" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0008" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0009" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0010" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0011" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0012" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0013" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Right0014" x="0" y="462" width="421" height="437"/>
+	<SubTexture name="Kastimagina Up0000" x="421" y="462" width="460" height="454" frameX="0" frameY="-3" frameWidth="460" frameHeight="457"/>
+	<SubTexture name="Kastimagina Up0001" x="421" y="462" width="460" height="454" frameX="0" frameY="-3" frameWidth="460" frameHeight="457"/>
+	<SubTexture name="Kastimagina Up0002" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0003" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0004" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0005" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0006" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0007" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0008" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0009" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0010" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0011" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0012" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0013" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="Kastimagina Up0014" x="881" y="462" width="460" height="457"/>
+	<SubTexture name="jumpdown0000" x="1341" y="462" width="521" height="482" frameX="0" frameY="0" frameWidth="521" frameHeight="509"/>
+	<SubTexture name="jumpdown0001" x="1862" y="462" width="519" height="481" frameX="-2" frameY="-7" frameWidth="521" frameHeight="509"/>
+	<SubTexture name="jumpdown0002" x="2381" y="462" width="517" height="481" frameX="-4" frameY="-14" frameWidth="521" frameHeight="509"/>
+	<SubTexture name="jumpdown0003" x="2898" y="462" width="515" height="486" frameX="-6" frameY="-16" frameWidth="521" frameHeight="509"/>
+	<SubTexture name="jumpdown0004" x="3413" y="462" width="513" height="493" frameX="-8" frameY="-16" frameWidth="521" frameHeight="509"/>
+	<SubTexture name="jumpleft0000" x="0" y="955" width="432" height="416" frameX="0" frameY="0" frameWidth="432" frameHeight="434"/>
+	<SubTexture name="jumpleft0001" x="432" y="955" width="432" height="419" frameX="0" frameY="0" frameWidth="432" frameHeight="434"/>
+	<SubTexture name="jumpleft0002" x="864" y="955" width="432" height="424" frameX="0" frameY="0" frameWidth="432" frameHeight="434"/>
+	<SubTexture name="jumpleft0003" x="1296" y="955" width="432" height="429" frameX="0" frameY="0" frameWidth="432" frameHeight="434"/>
+	<SubTexture name="jumpleft0004" x="1728" y="955" width="432" height="434"/>
+	<SubTexture name="jumpright0000" x="2160" y="955" width="469" height="506" frameX="0" frameY="0" frameWidth="469" frameHeight="530"/>
+	<SubTexture name="jumpright0001" x="2629" y="955" width="469" height="512" frameX="0" frameY="0" frameWidth="469" frameHeight="530"/>
+	<SubTexture name="jumpright0002" x="3098" y="955" width="469" height="518" frameX="0" frameY="0" frameWidth="469" frameHeight="530"/>
+	<SubTexture name="jumpright0003" x="3567" y="955" width="469" height="524" frameX="0" frameY="0" frameWidth="469" frameHeight="530"/>
+	<SubTexture name="jumpright0004" x="3567" y="955" width="469" height="524" frameX="0" frameY="0" frameWidth="469" frameHeight="530"/>
+	<SubTexture name="jumpup0000" x="0" y="1479" width="500" height="483" frameX="0" frameY="0" frameWidth="500" frameHeight="513"/>
+	<SubTexture name="jumpup0001" x="500" y="1479" width="500" height="475" frameX="0" frameY="-8" frameWidth="500" frameHeight="513"/>
+	<SubTexture name="jumpup0002" x="1000" y="1479" width="500" height="489" frameX="0" frameY="-8" frameWidth="500" frameHeight="513"/>
+	<SubTexture name="jumpup0003" x="1500" y="1479" width="500" height="505" frameX="0" frameY="-8" frameWidth="500" frameHeight="513"/>
+</TextureAtlas>
