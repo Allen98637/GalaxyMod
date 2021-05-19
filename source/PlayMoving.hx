@@ -182,29 +182,30 @@ class PlayMoving
                 if(Conductor.songPosition > daNote.strumTime)
                     daNote.alpha = 0;
             }
-            else if(daNote.strumTime > 23867 && daNote.strumTime < 34393)
+            else if(
+                (daNote.strumTime > 23867 && daNote.strumTime < 34393)
+            )
             {
-                if (((daNote.strumTime - 23867.403314917123) / (24033.149171270714 - 23867.403314917123)) % 2 >= 0.5 && ((daNote.strumTime - 23867.403314917123) / (24033.149171270714 - 23867.403314917123)) % 2 < 1.4)
+                if (daNote.noteData % 2 == 0)
                     daNote.y = (300 + (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
                 else
                     daNote.y = (300 - (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
             }
             else if(
-                    (daNote.strumTime > 34475 && daNote.strumTime < 45000) ||
-                    (daNote.strumTime > 103425 && daNote.strumTime < 135166 && Conductor.songPosition < 124640.8839779005)
-                )
+                (daNote.strumTime > 34475 && daNote.strumTime < 45000)
+            )
             {
-                switch (FlxMath.roundDecimal(((daNote.strumTime - 23867.403314917123) / (24033.149171270714 - 23867.403314917123)),0) % 4)
-                {
-                    case 0:
-                        daNote.y = (300 - (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
-                    case 1:
-                        daNote.y = (300 + (Conductor.songPosition - daNote.strumTime) * (0.225 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
-                    case 2:
-                        daNote.y = (300 - (Conductor.songPosition - daNote.strumTime) * (0.225 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
-                    case 3:
-                        daNote.y = (300 + (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
-                }
+                if (daNote.noteData % 2 == 1)
+                    daNote.y = (300 + (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
+                else
+                    daNote.y = (300 - (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
+            }
+            else if (daNote.strumTime > 103425 && daNote.strumTime < 135166 && Conductor.songPosition < 124640.8839779005)
+            {
+                if (daNote.noteData == 2 || daNote.noteData == 1)
+                    daNote.y = (300 + (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
+                else
+                    daNote.y = (300 - (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
             }
             else if(daNote.strumTime > 13259 && daNote.strumTime < 23785)
             {
@@ -216,13 +217,26 @@ class PlayMoving
             }
             else if(
                 (daNote.strumTime > 45082 && daNote.strumTime < 55525) ||
-                (daNote.strumTime > 135248 && daNote.strumTime < 156465)
+                (daNote.strumTime > 135248 && daNote.strumTime < 145856)
             )
             {
                 var index:Int = 0;
                 for(i in shinelist)
                 {
                     if(daNote.strumTime >= i)
+                        index += 1;
+                }
+                if(index % 2 == 1)
+                    daNote.y = (50 - (Conductor.songPosition - daNote.strumTime) * (0.25 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
+                else
+                    daNote.y = (550 + (Conductor.songPosition - daNote.strumTime) * (0.25 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
+            }
+            else if (daNote.strumTime > 145856 && daNote.strumTime < 156465)
+            {
+                var index:Int = 0;
+                for(i in shinelist)
+                {
+                    if(Conductor.songPosition >= i)
                         index += 1;
                 }
                 if(index % 2 == 1)
@@ -694,7 +708,7 @@ class PlayMoving
             }
             else if(
                 (daNote.strumTime > 45082 && daNote.strumTime < 66216) ||
-                (daNote.strumTime > 135248 && daNote.strumTime < 156465)
+                (daNote.strumTime > 135248 && daNote.strumTime < 145856)
             )
             {
                 var index:Int = 0;
@@ -704,6 +718,16 @@ class PlayMoving
                         index += 1;
                 }
                 return Conductor.songPosition < shinelist[index-1];
+            }
+            else if(daNote.strumTime > 145856 && daNote.strumTime < 156465)
+            {
+                var index:Int = 0;
+                for(i in shinelist)
+                {
+                    if(daNote.strumTime >= i)
+                        index += 1;
+                }
+                return (daNote.y < -daNote.height) || (daNote.y > FlxG.height) || Conductor.songPosition < 145856.35359116018;
             }
             else if(daNote.strumTime > 66298 && daNote.strumTime < 82045)
             {
@@ -766,13 +790,26 @@ class PlayMoving
             }
             else if(
                 (daNote.strumTime > 45082 && daNote.strumTime < 66216) ||
-                (daNote.strumTime > 135248 && daNote.strumTime < 156465)
+                (daNote.strumTime > 135248 && daNote.strumTime < 145856)
             )
             {
                 var index:Int = 0;
                 for(i in shinelist)
                 {
                     if(daNote.strumTime >= i)
+                        index += 1;
+                }
+                if(index % 2 == 1)
+                    return daNote.y < -daNote.height;
+                else
+                    return daNote.y > FlxG.height;
+            }
+            else if(daNote.strumTime > 145856 && daNote.strumTime < 156465)
+            {
+                var index:Int = 0;
+                for(i in shinelist)
+                {
+                    if(Conductor.songPosition >= i)
                         index += 1;
                 }
                 if(index % 2 == 1)
