@@ -2341,7 +2341,7 @@ class PlayState extends MusicBeatState
 	{
 		if (!boyfriend.stunned)
 		{
-			health -= 0.04;//0.04
+			health -= 0;//0.04
 			misses += 1;
 			if (combo > 5 && gf.animOffsets.exists('sad'))
 			{

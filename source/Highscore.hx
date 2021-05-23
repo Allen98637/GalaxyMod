@@ -32,13 +32,18 @@ class Highscore
 
 	public static function saveWeekScore(week:Int = 1, score:Int = 0, ?diff:Int = 0):Void
 	{
+		var weekc:String = "" + week;
+		if(week == 7)
+		{
+			weekc = "s";
+		}
 
 		#if !switch
-		NGio.postScore(score, "Week " + week);
+		NGio.postScore(score, "Week " + weekc);
 		#end
 
 
-		var daWeek:String = formatSong('week' + week, diff);
+		var daWeek:String = formatSong('week' + weekc, diff);
 
 		if (songScores.exists(daWeek))
 		{
@@ -82,10 +87,15 @@ class Highscore
 
 	public static function getWeekScore(week:Int, diff:Int):Int
 	{
-		if (!songScores.exists(formatSong('week' + week, diff)))
-			setScore(formatSong('week' + week, diff), 0);
+		var weekc:String = "" + week;
+		if(week == 7)
+		{
+			weekc = "s";
+		}
+		if (!songScores.exists(formatSong('week' + weekc, diff)))
+			setScore(formatSong('week' + weekc, diff), 0);
 
-		return songScores.get(formatSong('week' + week, diff));
+		return songScores.get(formatSong('week' + weekc, diff));
 	}
 
 	public static function load():Void

@@ -96,13 +96,10 @@ class PlayMoving
                     daNote.x = xlist[daNote.noteData];
                 if (daNote.isSustainNote)
                     daNote.x += daNote.width;
-                if (2.7 + (2.7 / 1000) * (Conductor.songPosition - daNote.strumTime) > 0)
-                    daNote.y = daNote.y = (strumLine.y - (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed*1.5, 2)) - (1.35 * 0.45 * (Conductor.songPosition - daNote.strumTime) * (Conductor.songPosition - daNote.strumTime) / 1000));
-                else 
-                    daNote.y = 1000;
+                daNote.y = (strumLine.y - (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(1.5, 2)));
                 if(daNote.isSustainNote && daNote.animation.curAnim.name.endsWith('hold'))
                 {
-                    daNote.scale.y= Conductor.stepCrochet / 100 * 1.5 * (PlayState.SONG.speed * 1.5 - 2.7 * (Conductor.songPosition - daNote.strumTime) / 1000);
+                    daNote.scale.y= Conductor.stepCrochet / 100 * 1.5 * 1.5;
                     daNote.updateHitbox();
                 }
             }
@@ -153,10 +150,7 @@ class PlayMoving
                     if (daNote.isSustainNote)
                         daNote.x += daNote.width;
                 }
-                if (daNote.strumTime > 61276 && daNote.sustainLength == 0 && !daNote.isSustainNote)
-                    daNote.y = (strumLine.y - (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed / 2, 2)));
-                else
-                    daNote.y = (strumLine.y - (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
+                daNote.y = (strumLine.y - (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
             }
             else if (daNote.strumTime >= 68085 && daNote.strumTime <= 96880)
             {
@@ -282,7 +276,7 @@ class PlayMoving
                     daNote.x = pxlist[daNote.noteData];
                 else
                     daNote.x = xlist[daNote.noteData];
-                daNote.y = (strumLine.y - (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(PlayState.SONG.speed, 2)));
+                daNote.y = (strumLine.y - (Conductor.songPosition - daNote.strumTime) * (0.45 * FlxMath.roundDecimal(0.75*PlayState.SONG.speed, 2)));
             }
             else if (daNote.strumTime >= 167071)
             {
@@ -584,6 +578,7 @@ class PlayMoving
             }
             else if(
                 (Conductor.songPosition > 45082 && Conductor.songPosition < 55525) ||
+                (Conductor.songPosition > 55690.60773480661 && Conductor.songPosition < 66215.46961325964) ||
                 (Conductor.songPosition > 135248 && Conductor.songPosition < 156382)
             )
             {
@@ -598,28 +593,6 @@ class PlayMoving
                 if(dastrum.x > 640)
                     dastrum.x = pxlist[dastrum.ID];
                 else
-                    dastrum.x = xlist[dastrum.ID];
-                if(index % 2 == 1)
-                    dastrum.y = 50;
-                else
-                    dastrum.y = 550;
-            }
-            else if(Conductor.songPosition > 55690.60773480661 && Conductor.songPosition < 66215.46961325964)
-            {
-                var index:Int = 0;
-                for(i in shinelist)
-                {
-                    if(Conductor.songPosition >= i)
-                        index += 1;
-                }
-                for(i in 0...4)
-                {
-                    xlist[i] = oxlist[(i + index - 1) % 4];
-                    pxlist[i] = poxlist[(i + index - 1) % 4];
-                }
-                if(dastrum.x > 640)
-                    dastrum.x = pxlist[dastrum.ID];
-                else 
                     dastrum.x = xlist[dastrum.ID];
                 if(index % 2 == 1)
                     dastrum.y = 50;
