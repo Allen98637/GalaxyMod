@@ -247,7 +247,10 @@ class PlayState extends MusicBeatState
 		// String that contains the mode defined here so it isn't necessary to call changePresence for each mode
 		if (isStoryMode)
 		{
-			detailsText = "Story Mode: Week " + storyWeek;
+			if(storyWeek == 7)
+				detailsText = "Story Mode: Week S";
+			else
+				detailsText = "Story Mode: Week " + storyWeek;
 		}
 		else
 		{
