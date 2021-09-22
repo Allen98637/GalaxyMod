@@ -51,6 +51,7 @@ class Note extends FlxSprite
 
 		var daStage:String = PlayState.curStage;
 
+
 		switch (daStage)
 		{
 			case 'school' | 'schoolEvil':

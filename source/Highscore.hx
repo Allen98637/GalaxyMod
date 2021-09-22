@@ -37,6 +37,10 @@ class Highscore
 		{
 			weekc = "s";
 		}
+		else if(week == 8)
+		{
+			weekc = "k";
+		}
 
 		#if !switch
 		NGio.postScore(score, "Week " + weekc);
@@ -91,6 +95,10 @@ class Highscore
 		if(week == 7)
 		{
 			weekc = "s";
+		}
+		else if(week == 8)
+		{
+			weekc = "k";
 		}
 		if (!songScores.exists(formatSong('week' + weekc, diff)))
 			setScore(formatSong('week' + weekc, diff), 0);

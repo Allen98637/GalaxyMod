@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bfp.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GF0000" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="karight0000" x="1280" y="0" width="1280" height="720"/>
+	<SubTexture name="show0000" x="2560" y="0" width="1280" height="720"/>
+</TextureAtlas>

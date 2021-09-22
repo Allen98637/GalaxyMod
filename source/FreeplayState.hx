@@ -80,6 +80,14 @@ class FreeplayState extends MusicBeatState
 			addWeek(['Senpai', 'Roses', 'Thorns'], 6, ['senpai', 'senpai', 'spirit']);
 		if (StoryMenuState.weekUnlocked[7] || isDebug)
 			addWeek(['Galaxy','Game',"Kastimagina"], 7, ['kastimagina']);
+		if (StoryMenuState.weekUnlocked[8] || isDebug)
+		{
+			#if desktop
+			addWeek(['Cona','Underworld','Cyber'], 7, ['kalisa']);
+			#else
+			addWeek(['Cona','Underworld'], 7, ['kalisa']);
+			#end
+		}
 
 		// LOAD MUSIC
 

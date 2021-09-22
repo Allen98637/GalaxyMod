@@ -27,6 +27,7 @@ class DialogueBox extends FlxSpriteGroup
 	var dropText:FlxText;
 
 	public var finishThing:Void->Void;
+	public var unfinish:Void->Void;
 
 	var portraitLeft:FlxSprite;
 	var portraitRight:FlxSprite;
@@ -34,7 +35,9 @@ class DialogueBox extends FlxSpriteGroup
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
 
-	public function new(talkingRight:Bool = true, ?dialogueList:Array<String>)
+	var num:Int;
+
+	public function new(talkingRight:Bool = true, ?dialogueList:Array<String>, num:Int = 0)
 	{
 		super();
 
@@ -46,6 +49,12 @@ class DialogueBox extends FlxSpriteGroup
 			case 'thorns':
 				FlxG.sound.playMusic(Paths.music('LunchboxScary'), 0);
 				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'cona':
+				if(num == 0)
+				{
+					FlxG.sound.playMusic(Paths.music('spaceship'), 0);
+					FlxG.sound.music.fadeIn(1, 0, 0.8);
+				}
 		}
 
 		bgFade = new FlxSprite(-200, -200).makeGraphic(Std.int(FlxG.width * 1.3), Std.int(FlxG.height * 1.3), 0xFFB3DFd8);
@@ -87,15 +96,17 @@ class DialogueBox extends FlxSpriteGroup
 				var face:FlxSprite = new FlxSprite(320, 170).loadGraphic(Paths.image('weeb/spiritFaceForward'));
 				face.setGraphicSize(Std.int(face.width * 6));
 				add(face);
-			case 'galaxy' | "game" | "kastimagina":
+			case 'galaxy' | "game" | "kastimagina" | "cona" | "underworld" | "cyber":
 				hasDialog = true;
 				box = new FlxSprite(-20, 380);
 				box.frames = Paths.getSparrowAtlas('speech_bubble_talking');
 				box.animation.addByPrefix('normalOpen', 'Speech Bubble Normal Open', 24, false);
 				box.animation.addByIndices('normal', 'Speech Bubble Normal Open', [11], "", 24);
+				box.antialiasing = true;
 		}
 
 		this.dialogueList = dialogueList;
+		this.num = num;
 		
 		if (!hasDialog)
 			return;
@@ -103,10 +114,14 @@ class DialogueBox extends FlxSpriteGroup
 		portraitLeft = new FlxSprite(-20, 40);
 		switch(PlayState.SONG.song.toLowerCase())
 		{
-			case "galaxy" | "game" | "kastimagina":
-				portraitLeft.frames = Paths.getSparrowAtlas('ship/kap');
+			case "galaxy" | "game" | "kastimagina" | "cona" | "underworld" | "cyber":
+				portraitLeft.frames = Paths.getSparrowAtlas('kap');
 				portraitLeft.animation.addByPrefix('enter', 'kashow', 24, false);
+				portraitLeft.animation.addByPrefix('nomic', 'kashon', 24, false);
 				portraitLeft.animation.addByPrefix('sad', 'kasad', 24, false);
+				portraitLeft.animation.addByPrefix('bor', 'kabor', 24, false);
+				portraitLeft.animation.addByPrefix('kalisa', 'kalisa', 24, false);
+				portraitLeft.antialiasing = true;
 			default:
 				portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
 				portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
@@ -120,9 +135,12 @@ class DialogueBox extends FlxSpriteGroup
 		portraitRight = new FlxSprite(0, 40);
 		switch(PlayState.SONG.song.toLowerCase())
 		{
-			case "galaxy" | "game" | "kastimagina":
-				portraitRight.frames = Paths.getSparrowAtlas('ship/bfp');
+			case "galaxy" | "game" | "kastimagina" | "cona" | "underworld" | "cyber":
+				portraitRight.frames = Paths.getSparrowAtlas('bfp');
 				portraitRight.animation.addByPrefix('enter', 'show', 24, false);
+				portraitRight.animation.addByPrefix('gf', 'GF', 24, false);
+				portraitRight.animation.addByPrefix('kasti', 'karight', 24, false);
+				portraitRight.antialiasing = true;
 			default:
 				portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
 				portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
@@ -224,7 +242,7 @@ class DialogueBox extends FlxSpriteGroup
 				{
 					isEnding = true;
 
-					if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns')
+					if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns'|| (PlayState.SONG.song.toLowerCase() == 'cona' && num == 0))
 						FlxG.sound.music.fadeOut(2.2, 0);
 
 					new FlxTimer().start(0.2, function(tmr:FlxTimer)
@@ -239,7 +257,13 @@ class DialogueBox extends FlxSpriteGroup
 
 					new FlxTimer().start(1.2, function(tmr:FlxTimer)
 					{
-						finishThing();
+						if (
+							(PlayState.SONG.song.toLowerCase() == 'cona' && num == 0) ||
+							PlayState.SONG.song.toLowerCase() == 'cyber' 
+						)
+							unfinish();
+						else
+							finishThing();
 						kill();
 					});
 				}
@@ -269,14 +293,26 @@ class DialogueBox extends FlxSpriteGroup
 
 		switch (curCharacter)
 		{
+			case 'kastibore':
+				portraitRight.visible = false;
+				portraitLeft.visible = true;
+				portraitLeft.animation.play('bor');
 			case 'kastisad':
 				portraitRight.visible = false;
 				portraitLeft.visible = true;
 				portraitLeft.animation.play('sad');
+			case 'kastinomic':
+				portraitRight.visible = false;
+				portraitLeft.visible = true;
+				portraitLeft.animation.play('nomic');
 			case 'kasti':
 				portraitRight.visible = false;
 				portraitLeft.visible = true;
 				portraitLeft.animation.play('enter');
+			case 'kalisa':
+				portraitRight.visible = false;
+				portraitLeft.visible = true;
+				portraitLeft.animation.play('kalisa');
 			case 'dad':
 				portraitRight.visible = false;
 				if (!portraitLeft.visible)
@@ -286,11 +322,16 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'bf':
 				portraitLeft.visible = false;
-				if (!portraitRight.visible)
-				{
-					portraitRight.visible = true;
-					portraitRight.animation.play('enter');
-				}
+				portraitRight.visible = true;
+				portraitRight.animation.play('enter');
+			case 'gf':
+				portraitLeft.visible = false;
+				portraitRight.visible = true;
+				portraitRight.animation.play('gf');
+			case 'kastiright':
+				portraitLeft.visible = false;
+				portraitRight.visible = true;
+				portraitRight.animation.play('kasti');
 		}
 	}
 

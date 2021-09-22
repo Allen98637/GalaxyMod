@@ -104,6 +104,8 @@ class PauseSubState extends MusicBeatSubstate
 			switch (daSelected)
 			{
 				case "Resume":
+					if(PlayState.SONG.song.toLowerCase() == "cyber" && PlayState.storyDifficulty != 0)
+						PlayWindow.reset();
 					close();
 				case "Restart Song":
 					FlxG.resetState();

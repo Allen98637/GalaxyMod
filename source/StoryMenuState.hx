@@ -30,11 +30,12 @@ class StoryMenuState extends MusicBeatState
 		['Satin-Panties', "High", "Milf"],
 		['Cocoa', 'Eggnog', 'Winter-Horrorland'],
 		['Senpai', 'Roses', 'Thorns'],
-		['galaxy','game','kastimagina']
+		['galaxy','game','kastimagina'],
+		['cona','underworld']
 	];
 	var curDifficulty:Int = 1;
 
-	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true,true];
+	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true, true, true];
 
 	var weekCharacters:Array<Dynamic> = [
 		['dad', 'bf', 'gf'],
@@ -44,7 +45,8 @@ class StoryMenuState extends MusicBeatState
 		['mom', 'bf', 'gf'],
 		['parents-christmas', 'bf', 'gf'],
 		['senpai', 'bf', 'gf'],
-		['kastimagina','bf','gf']
+		['kastimagina','bf','gf'],
+		['kalisa','bf','gf']
 	];
 
 	var weekNames:Array<String> = [
@@ -55,7 +57,8 @@ class StoryMenuState extends MusicBeatState
 		"MOMMY MUST MURDER",
 		"RED SNOW",
 		"hating simulator ft. moawling",
-		"Kastimagina"
+		"Kastimagina",
+		"Kalisa (The Battle Cats)"
 	];
 
 	var txtWeekTitle:FlxText;
@@ -76,6 +79,9 @@ class StoryMenuState extends MusicBeatState
 
 	override function create()
 	{
+		#if desktop
+		weekData[8] = ['cona','underworld','cyber'];
+		#end
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
 
@@ -423,7 +429,9 @@ class StoryMenuState extends MusicBeatState
 			case 'dad':
 				grpWeekCharacters.members[0].offset.set(120, 200);
 				grpWeekCharacters.members[0].setGraphicSize(Std.int(grpWeekCharacters.members[0].width * 1));
-
+			case 'kalisa':
+				grpWeekCharacters.members[0].offset.set(250, 130);
+				grpWeekCharacters.members[0].setGraphicSize(Std.int(grpWeekCharacters.members[0].width * 2));
 			default:
 				grpWeekCharacters.members[0].offset.set(100, 100);
 				grpWeekCharacters.members[0].setGraphicSize(Std.int(grpWeekCharacters.members[0].width * 1));

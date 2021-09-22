@@ -195,10 +195,10 @@ class TitleState extends MusicBeatState
 
 		credTextShit.visible = false;
 
-		ngSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('newgrounds_logo'));
+		ngSpr = new FlxSprite(0, FlxG.height * 0.56).loadGraphic(Paths.image('Allen'));
 		add(ngSpr);
 		ngSpr.visible = false;
-		ngSpr.setGraphicSize(Std.int(ngSpr.width * 0.8));
+		ngSpr.setGraphicSize(Std.int(ngSpr.width * 0.6));
 		ngSpr.updateHitbox();
 		ngSpr.screenCenter(X);
 		ngSpr.antialiasing = true;
@@ -367,9 +367,11 @@ class TitleState extends MusicBeatState
 				createCoolText(['Galaxy Mod', 'by']);
 			case 7:
 				addMoreText('Allen');
+				ngSpr.visible = true;
 			// credTextShit.text += '\nNewgrounds';
 			case 8:
 				deleteCoolText();
+				ngSpr.visible = false;
 			// credTextShit.visible = false;
 
 			// credTextShit.text = 'Shoutouts Tom Fulp';
