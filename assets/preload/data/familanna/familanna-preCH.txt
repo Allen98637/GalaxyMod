@@ -1,0 +1,19 @@
+:famitir:(哈欠) 整天開著太空船真累...
+:famitir:雖然說在外太空沒有"天"可言
+:SCREEN:
+:bf:Beep
+:famitir:蛤?
+:gf:他想跟妳來場音樂決鬥.
+:famitir:真假?
+:famiang:你知道一直開飛船不休息很傷身嗎?
+:famitir:現在是我休息的時間，我需要睡覺
+:bf:Beep beep boop
+:gf:你最近好像變得很愛競爭...
+:gf:你知道她跟吉娜一樣只是個14歲的孩子對吧?
+:bf:Beep
+:MUSIC:spaceship
+:famiang:很好，你真的那麼想要決鬥?
+:fami:來吧
+:fami:但我累了
+:fami:我是法米拉娜．阿卡拉．瑪典娜
+:fami:不要抱怨這太簡單

@@ -1,0 +1,31 @@
+:MUSIC:showup
+:bfspacesad:Beep...
+:gfspace:別傷心啦，總是有輸掉的可能的
+:famiscreen:Wow, 真意外，他竟然輸了
+:SCREEN:
+:unknown:&^%#&%*%^*#@
+:bfspaceoh:Beep?
+:unknown:(^@#^(^@(#^&(
+:unknown:%&*@%#^%@*
+:SCREEN:
+:bfspaceoh:Beep?
+:kastiright:喔! 謝啦
+:kastiright:有了這個，我們可以達到沒人能到達的速度!
+:kastiright:(外星科技真的比我們還要厲害很多啊...)
+:SCREEN:
+:MUSIC:famitheme
+:kastiright:出發吧，法米!
+:fami:坐好啦，我們會快到一個不行!
+:SCREEN:
+:MUSIC:spaceship
+:kastithink:該怎麼說呢...
+:kastithink:他浪費了時間，但他幫助我們得到了我們需要的東西
+:fami:先別在意這個了，我們現在要做的是在他們之前到達那裡...
+:MUSIC:
+:famiserious:好讓他們回到他們屬於的地方
+:SCREEN:
+:none:將軍! 她們的飛船正在以極快的速度到達那裡
+:none:說來慚愧，她們的速度比我們的極限還要快上許多
+:none:是嗎?
+:none:看來妳得到了強大的東西啊
+:none:又要再見面了呢，亞吉娜

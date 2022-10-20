@@ -4,6 +4,25 @@ All notable changes will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0] - 2022-10-20
+### Added
+- New level: VS ???
+- Credit Page
+- Trophies and scoreboard on GameJolt
+- Result screen
+- FPS option, mouse option, progress bar option, etc...
+### Removed
+- joke option (input option)
+### Changed
+- Improve chart of "Underworld"
+- Change the Game UI
+- Change the story menu UI
+- you can only play final songs each week in freeplay when you clear the week
+### Fixed
+- The keybind saves now
+- Input fixed
+- The fullscreen bug in "Cyber"
+
 ## [2.5.1] - 2022-03-21
 ### Fixed
 - Crash when you enter some level with Chinese

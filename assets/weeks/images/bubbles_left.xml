@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bubbles_left.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="familanna0000" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="famiscreen0000" x="1280" y="0" width="1280" height="720"/>
+	<SubTexture name="famiserious0000" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="famishock0000" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="rara0000" x="1280" y="720" width="1280" height="720"/>
+	<SubTexture name="raramiko0000" x="2560" y="720" width="1280" height="720"/>
+	<SubTexture name="raramikoshock0000" x="0" y="1440" width="1280" height="720"/>
+	<SubTexture name="unknown0000" x="1280" y="1440" width="1280" height="720"/>
+</TextureAtlas>

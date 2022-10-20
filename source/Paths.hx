@@ -75,6 +75,11 @@ class Paths
 		return getPath('sounds/$key.$SOUND_EXT', SOUND, library);
 	}
 
+	inline static public function video(key:String)
+	{
+		return getPreloadPath('videos/$key.mp4');
+	}
+
 	inline static public function soundRandom(key:String, min:Int, max:Int, ?library:String)
 	{
 		return sound(key + FlxG.random.int(min, max), library);

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bubbles_right.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bf0000" x="0" y="0" width="1280" height="720"/>
+	<SubTexture name="bfspace0000" x="1280" y="0" width="1280" height="720"/>
+	<SubTexture name="bfspaceoh0000" x="2560" y="0" width="1280" height="720"/>
+	<SubTexture name="bfspacesad0000" x="0" y="720" width="1280" height="720"/>
+	<SubTexture name="famiright0000" x="1280" y="720" width="1280" height="720"/>
+	<SubTexture name="gf0000" x="2560" y="720" width="1280" height="720"/>
+	<SubTexture name="gfspace0000" x="0" y="1440" width="1280" height="720"/>
+	<SubTexture name="kastiright0000" x="1280" y="1440" width="1280" height="720"/>
+	<SubTexture name="kastiserious0000" x="2560" y="1440" width="1280" height="720"/>
+	<SubTexture name="kastishocked0000" x="0" y="2160" width="1280" height="720"/>
+	<SubTexture name="kastispacenormal0000" x="1280" y="2160" width="1280" height="720"/>
+	<SubTexture name="kastispaceo0000" x="2560" y="2160" width="1280" height="720"/>
+	<SubTexture name="kastispaceserioous0000" x="0" y="2880" width="1280" height="720"/>
+	<SubTexture name="kastithink0000" x="1280" y="2880" width="1280" height="720"/>
+</TextureAtlas>

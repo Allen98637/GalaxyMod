@@ -1,0 +1,31 @@
+:MUSIC:showup
+:bfspacesad:Beep...
+:gfspace:Don't be sad, there's always a chance to lose
+:famiscreen:Wow, he lost, so surprising.
+:SCREEN:
+:unknown:&^%#&%*%^*#@
+:bfspaceoh:Beep?
+:unknown:(^@#^(^@(#^&(
+:unknown:%&*@%#^%@*
+:SCREEN:
+:bfspaceoh:Beep?
+:kastiright:Oh! thank you!
+:kastiright:With this thing, we can get the speed that no one can achieve!
+:kastiright:(Alien technology is just better than what we've got.)
+:SCREEN:
+:MUSIC:famitheme
+:kastiright:Ok, Fami. Let's do it!
+:fami:Sit down still! We will be even faster!
+:SCREEN:
+:MUSIC:spaceship
+:kastithink:What should I say...
+:kastithink:He wasted the time, but helped us to get what we need.
+:fami:Don't care about it now, what we should do is to reach there before them...
+:MUSIC:
+:famiserious:To send them back to where they belong.
+:SCREEN:
+:none:General! Their ship is approaching there with rapid speed.
+:none:It's a shame to say it, but their speed is much faster than that we can reach.
+:none:Oh, ya?
+:none:Seems you got something powerful, huh?
+:none:Time to meet again, Kastimagina Ya.

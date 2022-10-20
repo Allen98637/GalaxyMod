@@ -18,9 +18,9 @@ class OutdatedSubState extends MusicBeatState
 		add(bg);
 		var ver = "v" + Application.current.meta.get('version');
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
-			"-SEISZURE WARNING-\n\n"
-			+ "This mod of FNF may contain lots of stuff\n that will make you insane,\nif you feel uncomfortable, please stop the game\nimmediately."
-			+"\n\n(Press Enter to skip this page)",
+			"-SEISZURE WARNING-\n\n" +
+			"This mod of FNF may contain lots of stuff\n that will make you insane,\nif you feel uncomfortable, please stop the game\nimmediately." +
+			"\n\n(Press Enter to skip this page)",
 			32);
 		txt.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
 		txt.screenCenter();
@@ -31,7 +31,7 @@ class OutdatedSubState extends MusicBeatState
 	{
 		if (controls.ACCEPT)
 		{
-			FlxG.switchState(new MainMenuState());
+			LoadingState.loadAndSwitchState(new MainMenuState());
 		}
 		super.update(elapsed);
 	}

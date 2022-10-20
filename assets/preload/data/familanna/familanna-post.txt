@@ -1,0 +1,26 @@
+:kastiright:Hey, Fami!
+:kastiright:You're supposed to be in bed right now.
+:kastiright:What took you so long?
+:kastiright:...oh...
+:kastiright:You had a rap battle with him, huh?
+:famitir:(Yawn) Mhm.
+:famitir:I'm so tired.
+:fami:This battle is too easy for him.
+:kastiright:I'm sure your definition of "easy" is...
+:fami:Let's go to my bedroom, I want to sleep already.
+:SCREEN:
+:fami:So... is everything alright?
+:kastiright:Yeah!
+:fami:I hope everything can be done smoothly.
+:kastiright:Yup.
+:fami:So, the time is approaching.
+:kastiright:Ya, we need to find "that" before them...
+:kastiright:Who knows what will happen if they...
+:SCREEN:
+:kastiright:Oh, it's the bedroom.
+:fami:Thanks, Kasti!
+:fami:Hopefully our plan won't be destroyed.
+:kastiright:Good night, Fami.
+:kastiright:...even there's no "night" in space.
+:fami:Hahaha...
+:fami:Good night, Kasti.

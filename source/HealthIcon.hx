@@ -20,6 +20,7 @@ class HealthIcon extends FlxSprite
 		animation.add('bf-christmas', [0, 1], 0, false, isPlayer);
 		animation.add('bf-pur', [0, 1], 0, false, isPlayer);
 		animation.add('bf-pixel', [21, 21], 0, false, isPlayer);
+		animation.add('bf-space', [0, 1], 0, false, isPlayer);
 		animation.add('spooky', [2, 3], 0, false, isPlayer);
 		animation.add('pico', [4, 5], 0, false, isPlayer);
 		animation.add('mom', [6, 7], 0, false, isPlayer);
@@ -37,6 +38,8 @@ class HealthIcon extends FlxSprite
 		animation.add('monster-christmas', [19, 20], 0, false, isPlayer);
 		animation.add('kastimagina', [24, 25], 0, false, isPlayer);
 		animation.add('kalisa', [26, 27], 0, false, isPlayer);
+		animation.add('mathena', [28, 29], 0, false, isPlayer);
+		animation.add('unknown', [30, 30], 0, false, isPlayer);
 		animation.play(char);
 		scrollFactor.set();
 	}

@@ -1,0 +1,16 @@
+:MUSIC:spaceship
+:kastiright:Hey, Rara. Please help us to calculate the position of those planets.
+:rara:Ok, hmmm....
+:rara:Finished! The data will be sent to your panel.
+:kastiright:Thank you, Rara!
+:famiright:I'm still wondering. As a shrine maiden, why would you join this organization about science?
+:rara:um...
+:SCREEN:
+:MUSIC:rayarara
+:raramiko:Hmm...
+:raramiko:It's a beautiful day here.
+:raramiko:Birds are singing, flowers are...
+:MUSIC:
+:SCREEN:
+:none:(Boom)
+:raramikoshocked:What?

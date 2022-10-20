@@ -1,0 +1,16 @@
+:MUSIC:spaceship
+:kastiright:嘿，樂樂，幫我們計算那些星球的位置吧
+:rara:好的，嗯...
+:rara:完成了!資料會傳到妳們那邊
+:kastiright:謝啦!
+:famiright:我還是很好奇，身為一個巫女，為什麼會加入這個科學的組織?
+:rara:嗯...
+:SCREEN:
+:MUSIC:rayarara
+:raramiko:嗯...
+:raramiko:今天真是美好
+:raramiko:鳥兒在唱歌，花兒在...
+:MUSIC:
+:SCREEN:
+:none:(碰)
+:raramikoshocked:什麼?

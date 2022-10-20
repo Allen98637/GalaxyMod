@@ -1,8 +1,8 @@
-:kasti:Awesome! I really have fun a lot!
+:kasti:Awesome! I really had a lot of fun!
 :bf:Beep beep.
-:kasti:Yes, it is time for the final match.
-:bf:Bop
-:kastisad:I know three games are not enough, but I have my job to do.
-:kasti:But I'm sure we'll meet again! See you next time!
+:kasti:Yes, now it's time for our final match.
+:bf:Bop.
+:kastisad:I know three games aren't enough, but I have a job to do.
+:kasti:But I'm sure we'll meet again!
 :bf:Beep boop skdo boop?
-:kasti:Transform? Sounds stupid.
+:kasti:You want me to transform? Sounds stupid.

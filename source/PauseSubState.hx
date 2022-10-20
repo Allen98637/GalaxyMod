@@ -26,9 +26,19 @@ class PauseSubState extends MusicBeatSubstate
 	{
 		super();
 
+		if (!PlayState.isStoryMode)
+		{
+			if (!PlayState.practice)
+				menuItems = ['Resume', 'Restart Song', 'Practice Mode', 'Exit to menu'];
+			else
+				menuItems = ['Resume', 'Restart Song', 'End Practice', 'Exit to menu'];
+		}
+
 		pauseMusic = new FlxSound().loadEmbedded(Paths.music('breakfast'), true, true);
 		pauseMusic.volume = 0;
 		pauseMusic.play(false, FlxG.random.int(0, Std.int(pauseMusic.length / 2)));
+
+		FlxG.sound.music.pause();
 
 		FlxG.sound.list.add(pauseMusic);
 
@@ -84,17 +94,48 @@ class PauseSubState extends MusicBeatSubstate
 
 		super.update(elapsed);
 
-		var upP = controls.UP_P;
-		var downP = controls.DOWN_P;
+		var upP = controls.UP_UI;
+		var downP = controls.DOWN_UI;
 		var accepted = controls.ACCEPT;
 
-		if (upP)
+		if (upP || FlxG.mouse.wheel > 0)
 		{
 			changeSelection(-1);
 		}
-		if (downP)
+		if (downP || FlxG.mouse.wheel < 0)
 		{
 			changeSelection(1);
+		}
+
+		var bruh:Int = 0;
+		var brighter:Int = -1;
+		for (item in grpMenuShit.members)
+		{
+			if (FlxG.mouse.screenX > item.x
+				&& FlxG.mouse.screenX < item.x + item.width
+				&& FlxG.mouse.screenY > item.y
+				&& FlxG.mouse.screenY < item.y + item.height
+				&& MusicBeatState.mouseA)
+			{
+				brighter = bruh;
+				if (FlxG.mouse.justPressed)
+				{
+					if (curSelected == bruh)
+						accepted = true;
+					else
+						changeSelection(bruh - curSelected);
+				}
+			}
+			bruh += 1;
+		}
+		var bruh = 0;
+		for (item in grpMenuShit.members)
+		{
+			if (item.alpha != 1 && bruh == brighter)
+				item.alpha = 0.8;
+			else if (item.alpha != 1)
+				item.alpha = 0.6;
+			bruh += 1;
 		}
 
 		if (accepted)
@@ -104,13 +145,24 @@ class PauseSubState extends MusicBeatSubstate
 			switch (daSelected)
 			{
 				case "Resume":
-					if(PlayState.SONG.song.toLowerCase() == "cyber" && PlayState.storyDifficulty != 0)
+					if (PlayState.SONG.song.toLowerCase() == "cyber" && PlayState.storyDifficulty != 0)
 						PlayWindow.reset();
 					close();
 				case "Restart Song":
-					FlxG.resetState();
+					LoadingState.loadAndSwitchState(new PlayState(), true);
+				case "Practice Mode":
+					PlayState.practice = true;
+					close();
+				case "End Practice":
+					PlayState.practice = false;
+					LoadingState.loadAndSwitchState(new PlayState(), true);
 				case "Exit to menu":
-					FlxG.switchState(new MainMenuState());
+					PlayState.skipStory = false;
+					PlayState.practice = false;
+					if (PlayState.isStoryMode)
+						LoadingState.loadAndSwitchState(new StoryMenuState(), true);
+					else
+						LoadingState.loadAndSwitchState(new FreeplayState(), true);
 			}
 		}
 

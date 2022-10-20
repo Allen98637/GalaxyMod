@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="中文選項.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="story mode basic0000" x="0" y="0" width="238" height="51"/>
+	<SubTexture name="story mode basic0001" x="0" y="0" width="238" height="51"/>
+	<SubTexture name="story mode basic0002" x="0" y="0" width="238" height="51"/>
+	<SubTexture name="story mode white0000" x="238" y="0" width="238" height="51"/>
+	<SubTexture name="story mode white0001" x="238" y="0" width="238" height="51"/>
+	<SubTexture name="story mode white0002" x="238" y="0" width="238" height="51"/>
+	<SubTexture name="freeplay basic0000" x="0" y="51" width="242" height="55"/>
+	<SubTexture name="freeplay basic0001" x="0" y="51" width="242" height="55"/>
+	<SubTexture name="freeplay basic0002" x="0" y="51" width="242" height="55"/>
+	<SubTexture name="freeplay white0000" x="242" y="51" width="242" height="55"/>
+	<SubTexture name="freeplay white0001" x="242" y="51" width="242" height="55"/>
+	<SubTexture name="freeplay white0002" x="242" y="51" width="242" height="55"/>
+	<SubTexture name="donate basic0000" x="0" y="106" width="263" height="62"/>
+	<SubTexture name="donate basic0001" x="0" y="106" width="263" height="62"/>
+	<SubTexture name="donate basic0002" x="0" y="106" width="263" height="62"/>
+	<SubTexture name="donate white0000" x="0" y="168" width="263" height="62"/>
+	<SubTexture name="donate white0001" x="0" y="168" width="263" height="62"/>
+	<SubTexture name="donate white0002" x="0" y="168" width="263" height="62"/>
+	<SubTexture name="options basic0000" x="0" y="230" width="254" height="57"/>
+	<SubTexture name="options basic0001" x="0" y="230" width="254" height="57"/>
+	<SubTexture name="options basic0002" x="0" y="230" width="254" height="57"/>
+	<SubTexture name="options white0000" x="254" y="230" width="254" height="57"/>
+	<SubTexture name="options white0001" x="254" y="230" width="254" height="57"/>
+	<SubTexture name="options white0002" x="254" y="230" width="254" height="57"/>
+</TextureAtlas>

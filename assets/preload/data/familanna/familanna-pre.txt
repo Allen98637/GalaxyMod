@@ -1,0 +1,18 @@
+:famitir:(Yawn) Driving the spaceship for the whole day is really tiring...
+:famitir:...even though there's no "day" in space.
+:SCREEN:
+:bf:Beep!
+:famitir:What?
+:gf:He wants to rap battle with you.
+:famitir:Really?
+:famiang:Do you know how harmful driving a spaceship without rest is to the human body?
+:famitir:Right now, it's time for me to rest, I really need sleep.
+:bf:Beep beep boop!
+:gf:You've become so competitive recently...
+:gf:You know she's just a 14-year-old girl like Kastimagina, right?
+:bf:Bop.
+:MUSIC:famitheme
+:famiang:Fine, you really want a rap battle?
+:fami:Let's do it.
+:fami:...I'm Familanna Arcala Mathena.
+:fami:Don't blame me for being too easy for you.
